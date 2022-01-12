@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:weather_app/src/resources/repository.dart';
+import 'package:weather_app/src/resources/weather_bloc.dart';
 
 import 'src/app.dart';
 import 'src/settings/settings_controller.dart';
@@ -16,5 +19,9 @@ void main() async {
   // Run the app and pass in the SettingsController. The app listens to the
   // SettingsController for changes, then passes it further down to the
   // SettingsView.
-  runApp(MyApp(settingsController: settingsController));
+  
+  runApp(BlocProvider(
+    create: (_) => WeatherBloc(WeatherInitializedState()),
+    child: MyApp(settingsController: settingsController),
+  ));
 }

@@ -47,13 +47,14 @@ class MyApp extends StatelessWidget {
                     return const HomeView();
                   default:
                     return FutureBuilder(
-                      future: Future.delayed(const Duration(seconds: 3)),
-                      builder: (context, snapshot) {
-                      if (snapshot.connectionState == ConnectionState.waiting) {
-                        return const SplashScreen();
-                      }
-                      return const HomeView();
-                    });
+                        future: Future.delayed(const Duration(seconds: 3)),
+                        builder: (context, snapshot) {
+                          if (snapshot.connectionState ==
+                              ConnectionState.waiting) {
+                            return const SplashScreen();
+                          }
+                          return const HomeView();
+                        });
                 }
               },
             );
