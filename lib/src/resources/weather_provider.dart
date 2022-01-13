@@ -16,7 +16,7 @@ class WeatherApiProvider {
     if (response.statusCode == 200) {
       //return ApiResult.fromJson(responseString).items;
     } else {
-      throw Exception('failed to weather data');
+      throw Exception('failed to fetch weather data');
     }
   }
 }
