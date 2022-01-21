@@ -3,6 +3,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:weather_app/src/views/home_view.dart';
 import 'package:weather_app/src/views/splash_screen.dart';
+import 'package:weather_app/src/views/view_search_data.dart';
 import 'settings/settings_controller.dart';
 import 'settings/settings_view.dart';
 
@@ -45,6 +46,8 @@ class MyApp extends StatelessWidget {
                     return SettingsView(controller: settingsController);
                   case HomeView.routeName:
                     return const HomeView();
+                  case SearchedDataView.routeName:
+                    return const SearchedDataView();
                   default:
                     return FutureBuilder(
                         future: Future.delayed(const Duration(seconds: 3)),
