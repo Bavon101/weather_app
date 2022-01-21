@@ -14,7 +14,17 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-
+  http: ^0.13.4
+  geolocator: ^7.0.3
+  flutter_dialogs: ^2.1.0
+  location:
+  fluttertoast: ^8.0.6
+  badges: ^2.0.2
+  intl: ^0.17.0
+  flutter_svg: ^1.0.2
+  flutter_search_bar: ^3.0.0-dev.1
+  cached_network_image: ^3.1.0
+  shimmer: ^2.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
