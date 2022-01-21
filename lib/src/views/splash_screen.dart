@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:weather_app/src/short_calls.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({ Key? key }) : super(key: key);
@@ -6,13 +8,15 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: const Color(0xffffd5a0),
       body: Center(
-        child: Text("My Weather".toUpperCase(),style: const TextStyle(
-          color: Colors.white,
-          letterSpacing: 1.5,
-          fontWeight: FontWeight.bold
-        ),),
+        child: SvgPicture.asset(
+      "assets/images/weather.svg",
+      color: Colors.green,
+      semanticsLabel: 'A red up arrow',
+      width: width(context)*.33,
+      height: height(context)*.20,
+    ),
       ),
     );
   }
