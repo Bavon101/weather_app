@@ -1,16 +1,15 @@
 # weather_app
 
-A new Flutter project.
+A Weather App
+This project is a Weeather app that uses geo-location to display weather data, one call also do a search on the specific location and get weather data.
+The data contains a 7 days waether forecast.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple).
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- clone the repo
+- run `flutter pub get`
+- add `google maps API key` in the `config`
+- run the app
 
 ## Assets
 
